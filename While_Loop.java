@@ -1,6 +1,6 @@
 public class While_Loop {
     static boolean condition() {
-       boolean result = Math.random() < 0.99;                // "Result" is a boolean so it can only return true or false. 
+       boolean result = Math.random() < 0.99;                // "Result" is a boolean so it can only return "true" or "false". 
        System.out.println(result + ", ");                    // A random boolean is true 70% of the time and therefore false the remaining 30% of the time.
        return result;                                       
     }
