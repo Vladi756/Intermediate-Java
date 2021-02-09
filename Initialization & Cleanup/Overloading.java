@@ -26,3 +26,17 @@ public class Overloading {                              // This program shows wh
         g2.bark("Woof woof");
     }
 }                                                       
+ /* The reason Java can differentiate between methods and constructors of the same name is by looking at their arguments - different arguments tell Java that they're not 
+the same thing. Even if just the order of arguments is switched around (in the case that there are multiple arguments) Java could still figure out which one's which. 
+
+Output of the program: 
+
+I am a dog.
+Overloaded constructor:
+My name is Scruffy and I am a dog
+Bark Bark
+Overloaded method:
+Woof woof Bark Bark
+Bark Bark
+Overloaded method:
+Woof woof Bark Bark
