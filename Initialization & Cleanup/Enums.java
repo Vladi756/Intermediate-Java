@@ -5,8 +5,8 @@ public class Enums {
     
     public static void main(String[] args) {
         Currency money = Currency.USD;          
-        for(Currency m: Currency.values()) {        // Printing out every possible value of currency
-            System.out.println(m + " ordinal " + m.ordinal());  // Ordinal means position of value in the enum.
+        for(Currency m: Currency.values()) {                            // Printing out every possible value of currency
+            System.out.println(m + " ordinal " + m.ordinal());          // Ordinal means position of value in the enum.
         }
     }
 }
