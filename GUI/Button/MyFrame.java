@@ -7,7 +7,7 @@ import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
+import javax.swing.JLabel;						// Necessary Imports
 
 public class MyFrame extends JFrame implements ActionListener{
 	JButton button;
@@ -15,7 +15,7 @@ public class MyFrame extends JFrame implements ActionListener{
 	
 	MyFrame() {
 		
-		ImageIcon pic = new ImageIcon("Dice.png");
+		ImageIcon pic = new ImageIcon("Dice.png");		// "Dice.png" saved in the same directory as the project.
 		
 		label = new JLabel();
 		label.setIcon(pic);
@@ -24,7 +24,7 @@ public class MyFrame extends JFrame implements ActionListener{
 		
 		JButton button = new JButton();
 		button.setBounds(100, 100, 200, 50);
-		button.addActionListener(e->  { System.out.println("Hey!"); label.setVisible(true); });
+		button.addActionListener(e->  { System.out.println("Hey!"); label.setVisible(true); });		// Makes the button print hey and show the imageIcon.
 		
 		button.setText("I'm a button!");
 		button.setFocusable(false);
@@ -42,7 +42,7 @@ public class MyFrame extends JFrame implements ActionListener{
 		this.setSize(600, 600);
 		this.setVisible(true);
 		this.add(button);
-		this.add(label);
+		this.add(label);							// Adds button and label to the frame.
 	}
 
 	@Override
