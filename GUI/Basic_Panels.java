@@ -28,8 +28,8 @@ public class Basic_Panels {
         yellowPanel.setBackground(Color.yellow);
         yellowPanel.setBounds(250, 250, 250, 250);
                 
-        JFrame frame = new JFrame();                            // Create a frame close on exit 
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JFrame frame = new JFrame();                            // Create a frame 
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   // Makes it so the program stops running when the window (frame) is closed.
         frame.setVisible(true);
         frame.setSize(600, 600);
 
@@ -37,7 +37,7 @@ public class Basic_Panels {
         frame.add(bluePanel);
         frame.add(redPanel);
         frame.add(greenPanel);
-        frame.add(yellowPanel);                             // Add everything. 
+        frame.add(yellowPanel);                                 // Add all the panels to the frame.
 
         
     }
