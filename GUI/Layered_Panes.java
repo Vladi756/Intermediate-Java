@@ -2,7 +2,7 @@ import java.awt.Color;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JLayeredPane;
+import javax.swing.JLayeredPane;							// Neccessary imports
 
 public class Layered_Panes {
 	public static void main(String[] args) {
@@ -33,7 +33,7 @@ public class Layered_Panes {
 		label5.setBounds(210, 210, 200, 200);
 		
 		JLayeredPane pane = new JLayeredPane();
-		pane.setBounds(0, 0, 500, 500);							// The panes layer over each other because they are in a JLayeredPane
+		pane.setBounds(0, 0, 500, 500);						  // The panes layer over each other because they are in a JLayeredPane
 		
 		pane.add(label1, Integer.valueOf(0));
 		pane.add(label2, Integer.valueOf(1));
@@ -45,9 +45,9 @@ public class Layered_Panes {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(500, 500);
 		frame.setLayout(null);
-		frame.add(pane);										// Add everything to the frame
+		frame.add(pane);							  // Add everything to the frame
 	
 		
-		frame.setVisible(true);									// Once everything is added, make it visisble
+		frame.setVisible(true);							  // Once everything is added, make it visisble
 	}
 }
