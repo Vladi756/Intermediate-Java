@@ -2,12 +2,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
-import javax.swing.JFrame;
+import javax.swing.JFrame;						// Necessary imports.
 
 public class LaunchPage implements ActionListener{
 		
 	JFrame frame =  new JFrame();
-	JButton button = new JButton("New Window");
+	JButton button = new JButton("New Window");			// Creates new JFrame.
 	
 	LaunchPage() {
 		button.setBounds(100, 160, 200, 50);
@@ -27,7 +27,7 @@ public class LaunchPage implements ActionListener{
 		if(e.getSource() == button) {
 			frame.dispose();
 			NewWindow myWindow = new NewWindow();
-		}
+		}							// Causes the button to open a new window called myWindow.
 		
 	}
 }
