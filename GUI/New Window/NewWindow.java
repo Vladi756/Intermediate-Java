@@ -11,13 +11,13 @@ public class NewWindow {
 	NewWindow() {
 		
 		label.setBounds(0, 0, 100, 50);
-		label.setFont(new Font("Times New Roman", Font.PLAIN,20));
+		label.setFont(new Font("Times New Roman", Font.PLAIN,20)); 	// Creates a simple label
 		
 		frame.add(label);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(500, 500);
 		frame.setLayout(null);
-		frame.setVisible(true);
+		frame.setVisible(true);						// Adds label to frame	
 
 	}
 }
