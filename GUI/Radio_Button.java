@@ -16,7 +16,7 @@ public class Radio_Button extends JFrame implements ActionListener{		// Extends 
 	ImageIcon burgerIcon;
 	ImageIcon hotdogIcon;
 													
-	Radio_Button() {													// Constructor for "Radio_Button" class.
+	Radio_Button() {									// Constructor for "Radio_Button" class.
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);					
 		this.setLayout(new FlowLayout());
 		
@@ -26,16 +26,16 @@ public class Radio_Button extends JFrame implements ActionListener{		// Extends 
 		
 		pizza = new JRadioButton("Pizza");
 		burger = new JRadioButton("Hamburger");
-		hotdog = new JRadioButton("Hotdog");							// Creates new Radio Buttons.
+		hotdog = new JRadioButton("Hotdog");						// Creates new Radio Buttons.
 		
 		pizza.setIcon(pizzaIcon);
 		burger.setIcon(burgerIcon);
 		hotdog.setIcon(hotdogIcon);
 		
-		ButtonGroup group = new ButtonGroup();							// Creates button group.
+		ButtonGroup group = new ButtonGroup();						// Creates button group.
 		group.add(pizza);
 		group.add(burger);
-		group.add(hotdog);												// Adds buttons to group so only one can be selected at a time.
+		group.add(hotdog);								// Adds buttons to group so only one can be selected at a time.
 		
 		pizza.addActionListener(this);
 		burger.addActionListener(this);
@@ -43,10 +43,10 @@ public class Radio_Button extends JFrame implements ActionListener{		// Extends 
 		
 		this.add(pizza);
 		this.add(burger);
-		this.add(hotdog);												// Add buttons to the frame.
+		this.add(hotdog);								// Add buttons to the frame.
 		
 		this.pack();
-		this.setVisible(true);											// Make frame visisble.
+		this.setVisible(true);								// Make frame visisble.
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) {						// Action listener for buttons. 
