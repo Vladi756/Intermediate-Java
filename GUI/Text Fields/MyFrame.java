@@ -9,7 +9,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextField;										// Necessary imports
 
-public class MyFrame extends JFrame implements ActionListener{
+public class MyFrame extends JFrame implements ActionListener{						// Extends JFrame and implement Action Listener.
 	
 	JButton button;
 	JTextField textField;
@@ -32,14 +32,14 @@ public class MyFrame extends JFrame implements ActionListener{
 		this.add(textField);
 		this.add(button);
 		
-		this.pack();												// Adjusts to fit all components
+		this.pack();										// Adjusts to fit all components
 		this.setVisible(true);
 		
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource() == button) {
-			System.out.println("Welcome " + textField.getText());	// getText gets the text from where is specified
+			System.out.println("Welcome " + textField.getText());				// getText gets the text from where is specified
 			button.setEnabled(false);
 			textField.setEditable(false);							// Disables button and can't edit the text field afterwards
 		}
