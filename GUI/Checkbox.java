@@ -36,7 +36,7 @@ public class Checkbox extends JFrame implements ActionListener{
 		this.add(checkBox);
 		this.add(button);
 		this.pack();
-		this.setVisible(true);												// Adding everything to frame, making it visisble.
+		this.setVisible(true);										// Adding everything to frame, making it visisble.
 		
 	}
 	@Override
