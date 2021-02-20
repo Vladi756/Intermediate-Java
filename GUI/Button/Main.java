@@ -1,6 +1,6 @@
 public class Main {
 	public static void main(String[] args) {
 		
-		new MyFrame();					// Creates a new object with MyFrame class
+		new Button();					// Creates a new object with a Button class
 	}
 }
