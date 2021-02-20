@@ -9,11 +9,11 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;						// Necessary Imports
 
-public class MyFrame extends JFrame implements ActionListener{
+public class Button extends JFrame implements ActionListener{
 	JButton button;
 	JLabel label;
 	
-	MyFrame() {
+	Button() {
 		
 		ImageIcon pic = new ImageIcon("Dice.png");		// "Dice.png" saved in the same directory as the project.
 		
