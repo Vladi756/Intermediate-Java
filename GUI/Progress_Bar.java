@@ -2,7 +2,7 @@ import java.awt.Color;
 import java.awt.Font;
 
 import javax.swing.JFrame;
-import javax.swing.JProgressBar;
+import javax.swing.JProgressBar;					// Neccessary imports.
 
 public class Progress_Bar {		
 	
@@ -13,7 +13,7 @@ public class Progress_Bar {
 		
 		bar.setValue(0);
 		bar.setBounds(5, 15, 470, 60);
-		bar.setStringPainted(true);						// Adds Percentage to progress bar.
+		bar.setStringPainted(true);					// Adds Percentage to progress bar.
 		bar.setFont(new Font("MV Boli", Font.BOLD, 25));
 		bar.setForeground(Color.RED);
 		bar.setBackground(Color.BLACK);
@@ -31,13 +31,13 @@ public class Progress_Bar {
 		int counter = 0;
 		while(counter <= 100) {
 		bar.setValue(counter);
-			try {
-				Thread.sleep(50);								// Pauses program for 50 milliseconds after each iteration of our while loop
+			try {								// Try-catch block in place to handle exceptions.
+				Thread.sleep(50);					// Pauses program for 50 milliseconds after each iteration of the while loop.
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			} 		
-			counter += 1;    									// Increase at 10 percent a second.
+			counter += 1;    						// Increase at 10 percent a second.
 		}
-		bar.setString("Completed!");
+		bar.setString("Completed!");						// Happens outside of while loop - when it finishes executing.
 	}
 }
