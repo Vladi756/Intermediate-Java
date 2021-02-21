@@ -1,6 +1,6 @@
 public class Main {
 	public static void main(String[] args) {
 		
-		new MyFrame();
+		new MenuBar();			// Creates new instance of MenuBar()
 	}
 }
