@@ -7,9 +7,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;				// Neccesary imports
+import javax.swing.JMenuItem;						// Neccesary imports
 
-public class MyFrame extends JFrame implements ActionListener {
+public class MenuBar extends JFrame implements ActionListener {
 	
 	JMenuBar menuBar;
 	
@@ -23,9 +23,9 @@ public class MyFrame extends JFrame implements ActionListener {
 	
 	ImageIcon loadIcon;
 	ImageIcon saveIcon;
-	ImageIcon exitIcon;						// Declaring everything in global scope
+	ImageIcon exitIcon;						// Declaring everything in the global scope
 	
-	MyFrame() {
+	MenuBar() {
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setSize(500, 500);
 		this.setLayout(new FlowLayout());
@@ -39,11 +39,11 @@ public class MyFrame extends JFrame implements ActionListener {
 		
 		JMenu fileMenu = new JMenu("File");
 		JMenu editMenu = new JMenu("Edit");
-		JMenu helpMenu = new JMenu("Help");		// Creating Menus within the menu bar.
+		JMenu helpMenu = new JMenu("Help");			// Creating Menus within the menu bar.
 			
 		loadItem = new JMenuItem("Load");
 		saveItem = new JMenuItem("Save");
-		exitItem = new JMenuItem("Exit");		// Drop down menyu itmes under file
+		exitItem = new JMenuItem("Exit");			// Drop down menyu itmes under file
 		
 		loadItem.setIcon(loadIcon);
 		saveItem.setIcon(saveIcon);
@@ -70,7 +70,7 @@ public class MyFrame extends JFrame implements ActionListener {
 		menuBar.add(helpMenu);
 		
 		this.setJMenuBar(menuBar);
-		this.setVisible(true);	
+		this.setVisible(true);					// Adding menu bar, and making frame visible.
 	}
 
 	
@@ -82,6 +82,6 @@ public class MyFrame extends JFrame implements ActionListener {
 			System.out.println("Your file has been saved.");
 		} else if(e.getSource() == exitItem) {
 			System.exit(0);
-		}												// Action listener causes items to do various things when selected. 
+		}							// Action listener causes items to do various things when selected. 
 	}		
 }
