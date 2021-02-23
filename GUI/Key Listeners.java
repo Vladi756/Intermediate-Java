@@ -18,7 +18,7 @@ public class MyFrame extends JFrame implements KeyListener{
 		this.setLayout(null);
 		this.addKeyListener(this);
 		
-		icon = new ImageIcon("rocket.png");
+		icon = new ImageIcon("rocket.png");		// Image saved on my PC.
 		
 		label = new JLabel();
 		label.setBounds(0, 0, 100, 100);		// Manually set position because layout manager = 0;
@@ -42,8 +42,8 @@ public class MyFrame extends JFrame implements KeyListener{
 				break;
 			case 'd': label.setLocation(label.getX() + 10 ,label.getY());
 				break;
-			case 'w': label.setLocation(label.getX(),label.getY() - 10);			// Moves the label from current position to a specified direction
-				break;															// direction depends on what access has a number addedd/subtracted to it
+			case 'w': label.setLocation(label.getX(),label.getY() - 10);	// Moves the label from current position to a specified direction
+				break;							// direction depends on what access has a number added/subtracted to it.
 		}
 	}
 
