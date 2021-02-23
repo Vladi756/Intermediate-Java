@@ -6,13 +6,13 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;		// Neccessary imports
 
-public class MyFrame extends JFrame implements MouseListener{
+public class Mouse_Listener extends JFrame implements MouseListener{
 
 	JLabel label;
 	ImageIcon check;
 	ImageIcon X;			// Initalizing in the global scope.
 
-	MyFrame() {
+	Mouse_Listener() {
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setLayout(new FlowLayout());
 		
