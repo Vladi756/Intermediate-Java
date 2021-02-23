@@ -4,13 +4,13 @@ import java.awt.event.MouseListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
+import javax.swing.JLabel;		// Neccessary imports
 
 public class MyFrame extends JFrame implements MouseListener{
 
 	JLabel label;
 	ImageIcon check;
-	ImageIcon X;
+	ImageIcon X;			// Initalizing in the global scope.
 
 	MyFrame() {
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -29,12 +29,12 @@ public class MyFrame extends JFrame implements MouseListener{
 		this.setLocationRelativeTo(null);
 		this.setVisible(true);						
 
-}
+	}
 
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		// Invoked when the mouse button has been clicked (pressed and released) on any given component.
-		label.setIcon(check);
+		label.setIcon(check);		// When clicked, the icon switches from checkmarck to check.
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class MyFrame extends JFrame implements MouseListener{
 	@Override
 	public void mouseEntered(MouseEvent e) {
 		// Invoked when the mouse enters the area of the component.
-		label.setIcon(X);
+		label.setIcon(X);		// Icons check
 	}
 
 	@Override
